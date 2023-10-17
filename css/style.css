@@ -10,27 +10,33 @@
     font-size: 16px;
 }
 
-h1{
-    font-size: 60px;
+main section{
+    padding: 5% 0;
 }
+
+main .quarta_sezione{
+    padding: 10% 0;
+}
+
+
+p{
+    padding-top: 5%;
+    line-height: 160%;
+    font-size: 22px;
+}
+
 
 /*zona header - nav*/
 .contenitore_navigazione{
     display: flex;
-
-    /*debug*/
-
     background-color: rgba(37,94,233,255);
-    min-height: 70px;
+    padding: 1% 0;
 }
 
 .barra_navigazione{
     display: flex;
     flex-basis: 65%;
     margin: auto;
-
-    /*debug*/
-    min-height: 35px;
 }
 
 nav .logo{
@@ -47,44 +53,50 @@ nav .link{
     flex-basis: 50%;
 }
 
-
-.login{
+.contenitore_navigazione button{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-basis: 25%;
-    padding-right: 1%;
+    margin-left: 23%;
+    padding: 0 1%;
+    border-radius: 40px;
+    border: none;
+    color: rgb(29, 28, 28);
+    font-weight: bold
 }
 
-a{
-    text-decoration: none;
+a, .col_1 div{
     color: white;
+    text-decoration: none;
 }
+
 
 /*sezione di header*/
+h1{
+    font-size: 65px;
+    padding-bottom: 5%;
+}
+
 .sfondo_principale{
     display: flex;
     background-image: url(../img/jumbo.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 500px;
+    background-size: cover;
+    height: 630px;
 
 }
 
 .testo_sfondo{
-
-    /*debug*/
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: space-evenly;
     align-items: center;
-    flex-basis: 50%;
+    flex-basis: 40%;
     margin: auto;
     color: white;
 }
 
-.testo_sfondo p{
+.sfondo_principale p{
     font-size: 18px;
     text-align: center;
 }
@@ -93,93 +105,74 @@ a{
     width: 100%;
     display: flex;
     justify-content:space-evenly;
-    margin-bottom: 100px;
+    padding: 0 20% 5%;
 }
 
 /*sezione main*/
-.contenitore_main_1{
-    display: flex;
-    min-height: 350px;
+
+h2{
+    font-size: 53px;
 }
 
-.immagine_sezione_1{
-    flex-basis: 45%;
+h3{
+    font-size: 33px;
+}
+.prima_sezione .contenitore, .seconda_sezione .contenitore, .terza_sezione .contenitore, .quarta_sezione .contenitore{
+    display: flex;
+}
 
-    /*debug*/
-
+.prima_sezione .immagine, .seconda_sezione .immagine, .terza_sezione .immagine{
+    display: flex;
+    flex-basis: 50%;
     margin-left: auto;
-    margin-top: auto;
     margin-bottom: auto;
-    border: 2px dashed black;
 }
 
-.testo_sezione_1{
+.prima_sezione .testo, .seconda_sezione .testo, .terza_sezione .testo{
     display: flex;
-    flex-basis: 25%;
-
-    /*debug*/
-    background-color: pink;
-    min-height: 275px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 2px dashed black;
-}
-
-.contenitore_main_2{
-    display: flex;
-    min-height: 350px;
-    background-color: grey;
-}
-
-.immagine_sezione_2{
-    display: flex;
-    flex-basis: 25%;
-
-    /*debug*/
-    background-color: rgba(33, 95, 119, 0.973);
-    min-height: 275px;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 2px dashed black;
-}
-
-.testo_sezione_2{
-    flex-basis: 45%;
-
-    /*debug*/
-    background-color: pink;
-    min-height: 275px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 2px dashed black;
-}
-
-.immagine_sezione_1, .immagine_sezione_2{
     flex-direction: column;
+    flex-basis: 20%;
+    padding-right: 2%;
+    margin-right: auto;
+    margin-bottom: auto;
 }
 
-.immagine_sezione_1 img,  .immagine_sezione_2 img{
-    height: 300px;
-    justify-content: flex-end;
+.seconda_sezione .testo{
+    margin-left: auto;
+    margin-right: 0;
 }
 
-.contenitore_main_3{
+.seconda_sezione .immagine{
+    margin-right: 0;
+    justify-content: flex-start;
+}
+
+.download_finale{
+    padding-top: 5%;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 700px;
+}
+
+/*immagini di main*/
+.prima_sezione .immagine, .immagine_sezione_2 img, .terza_sezione .immagine{
+    height: 350px;
+}
+
+
+/*colore sfondo di main*/
+.seconda_sezione, .quarta_sezione{
+    background-color: grey
+}
+
+
+.quarta_sezione .testo{
     display: flex;
-    min-height: 550px;
-    background-color: grey;
-}
-
-.sezione_3{
+    flex-direction: column;
+    text-align: center;
     flex-basis: 70%;
-
-    /*debug*/
-    background-color: green;
-    min-height: 475px;
     margin: auto;
-    border: 2px dashed black;
 }
 
 /*colonne footer*/
@@ -256,4 +249,56 @@ a{
     /*debug*/
     border: 1px dashed black;
     background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+/*hover*/
+.contenitore_navigazione button:hover, .sfondo_principale .down_mac:hover{
+    color: rgba(37,94,233,255);
+    box-shadow: 0px 0px 10px 1px black
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+button[target="pulsante_nero"]:hover{
+    background-color: rgb(90, 89, 89);
+    box-shadow: 0px 0px 10px 1px rgb(90, 89, 89);
+}
+
+.down_mac2:hover{
+    background-color: rgba(110, 154, 235, 0.685);
+    box-shadow: 0px 0px 10px 1px rgb(90, 89, 89);
+}
+
+/*pulsanti*/
+button{
+    padding: 2% 3%;
+    border-radius: 40px;
+    border: none;
+    color: rgb(29, 28, 28);
+}
+
+.down_mac2{
+    background-color: rgba(51, 118, 243, 0.685);
+    padding: 1%;
+}
+
+.posizione_bottone{
+    margin-top: 2%;
+    text-align: center;
+}
+
+
+button[target="pulsante_nero"] {
+    background-color: rgb(29, 28, 28);
+    color: white;
 }
