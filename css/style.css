@@ -25,7 +25,6 @@ p{
     font-size: 22px;
 }
 
-
 /*zona header - nav*/
 .contenitore_navigazione{
     display: flex;
@@ -65,9 +64,10 @@ nav .link{
     font-weight: bold
 }
 
-a, .col_1 div{
+a, ul, .col_1 div{
     color: white;
     text-decoration: none;
+    line-height: 160%;
 }
 
 
@@ -156,16 +156,14 @@ h3{
 }
 
 /*immagini di main*/
-.prima_sezione .immagine, .immagine_sezione_2 img, .terza_sezione .immagine{
+.prima_sezione .immagine,.seconda_sezione .immagine, .terza_sezione .immagine{
     height: 350px;
 }
-
 
 /*colore sfondo di main*/
 .seconda_sezione, .quarta_sezione{
     background-color: grey
 }
-
 
 .quarta_sezione .testo{
     display: flex;
@@ -176,20 +174,14 @@ h3{
 }
 
 /*colonne footer*/
-
 .sfondo_footer{
     background-color: rgb(37, 37, 37);
-    border-bottom: 2px solid wheat;
     padding-top: 1%;
-    padding-bottom: 2%;
 }
 
 .row{
     display: flex;
     justify-content: center;
-
-    /*debug*/
-    min-height: 450px;
     margin: auto;
     padding-top: 1%;
     padding-bottom: 2%;
@@ -197,86 +189,64 @@ h3{
 }
 
 .col_1{
-    flex-basis: calc((70% / 6) * 2);
-
-    /*debug*/
-    background-color: palevioletred;
-    border: 2px dashed black;
-    
+    flex-basis: calc((70% / 6) * 2);  
 }
 
-.col_2{
-    flex-basis: calc(70% / 6);
+.bandiera{
+    width: 25px;
+    vertical-align: middle;
+}
 
-    /*debug*/
-    background-color: rgb(0, 89, 255);
-    border: 2px dashed white;
-    
+#dettagli_titolo_footer{
+    color: rgba(51, 118, 243, 0.685);
+    padding-right: 35%;
+}
+
+span{
+    padding-right: 5%;
+}
+
+
+
+.col_2{
+    flex-basis: calc(70% / 6); 
+}
+
+ul{
+    color: rgba(51, 118, 243, 0.685);
+    padding-top: 0;
+    list-style-type: none;
+}
+
+li{
+    color: white;
+    text-decoration: none;
 }
 
 /*footer piè pagina*/
 .sfondo_footer_fine{
     display: flex;
     background-color: rgb(37, 37, 37);
-    border-bottom: 2px solid wheat;
-    padding-top: 1.5%;
 }
 
 .contenitore_piè_pagina{
     display: flex;
     flex-basis: 70%;
     margin: auto;
-    background-color: aquamarine;
+    background-color: rgb(37, 37, 37);
     justify-content: space-between;
-
-    /*debug*/
-    min-height: 35px;
+    border-top: 2px solid rgba(51, 118, 243, 0.685);
 }
 
 .logo_fine{
     align-items: center;
     margin: 1%;
-
-    /*debug*/
-    border: 1px dashed black;
-    background-color: pink;
 }
 
-.bottone{
+.bottone_registrati{
     align-items: center;
     margin: 1%;
-
-    /*debug*/
-    border: 1px dashed black;
-    background-color: pink;
-}
-
-
-
-
-
-
-
-
-
-/*hover*/
-.contenitore_navigazione button:hover, .sfondo_principale .down_mac:hover{
-    color: rgba(37,94,233,255);
-    box-shadow: 0px 0px 10px 1px black
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-button[target="pulsante_nero"]:hover{
-    background-color: rgb(90, 89, 89);
-    box-shadow: 0px 0px 10px 1px rgb(90, 89, 89);
-}
-
-.down_mac2:hover{
-    background-color: rgba(110, 154, 235, 0.685);
-    box-shadow: 0px 0px 10px 1px rgb(90, 89, 89);
+    background-color: rgba(51, 118, 243, 0.685);
 }
 
 /*pulsanti*/
@@ -290,6 +260,7 @@ button{
 .down_mac2{
     background-color: rgba(51, 118, 243, 0.685);
     padding: 1%;
+    color: white;
 }
 
 .posizione_bottone{
@@ -297,6 +268,13 @@ button{
     text-align: center;
 }
 
+.bottone_registrati{
+    margin-bottom: 2%;
+    padding: 1%;
+    color: white;
+    align-items: center;
+    background-color: rgba(51, 118, 243, 0.685);
+}
 
 button[target="pulsante_nero"] {
     background-color: rgb(29, 28, 28);
